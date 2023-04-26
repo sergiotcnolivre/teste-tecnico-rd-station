@@ -1,0 +1,60 @@
+.btn_primary, .btn_secondary, .btn_highlight {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px;
+    gap: 8px;
+    border: none;
+    font-weight: bold;
+    transition: all .4s;
+}
+
+.btn_primary::after,
+.btn_secondary::after,
+.btn_highlight::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.btn_primary::after,
+.btn_secondary::after,
+.btn_highlight::after {
+    border-top: 4px solid var(--color-black-primary);
+    border-left: 8px solid rgba(0, 0, 0, 0);
+    border-right: 8px solid rgba(0, 0, 0, 0);
+}
+
+.btn_primary {
+    background: var(--color-blue-secondary);
+}
+
+.btn_primary:hover {
+    background: var(--color-blue-primary);
+}
+
+.btn_highlight {
+    background: var(--color-yellow-secondary);
+}
+
+.btn_highlight:hover {
+    background: var(--color-yellow-primary);
+}
+
+.btn_secondary {
+    background: var(--color-white-primary);
+    border: 2px solid var(--color-black-secondary);
+}
+
+.btn_secondary:hover {
+    background: var(--color-gray-primary);
+}

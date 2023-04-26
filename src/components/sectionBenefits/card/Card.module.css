@@ -1,0 +1,30 @@
+
+.card {
+    display: flex;
+    padding: 24px;
+    width: 392px;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 16px;
+    box-shadow: 0px 4px 12px rgba(33, 36, 41, 0.14);
+    border-radius: 2px;
+}
+
+.card_header {
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-white-secondary);
+}
+
+.card_body {
+
+}
+
+.card_footer {
+
+}

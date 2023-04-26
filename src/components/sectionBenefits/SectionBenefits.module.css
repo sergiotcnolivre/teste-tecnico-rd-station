@@ -1,0 +1,27 @@
+
+.section {
+    padding: 120px 108px;
+    background-color: var(--color-white-primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 64px;
+}
+
+.section h2 {
+    margin-bottom: 24px;
+}
+
+.section_container_card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+
+}
+
+@media screen and (max-width: 360px) {
+    .section {
+        padding: 40px 16px;
+    }
+}

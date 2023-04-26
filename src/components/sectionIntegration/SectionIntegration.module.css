@@ -1,0 +1,69 @@
+
+.section {
+    padding: 124px 108px;
+    background-color: var(--color-white-primary);
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 45px;
+}
+
+.section_criar_conta {
+    width: 50%;
+}
+
+.section_criar_conta p {
+    margin: 24px 0 40px 0;
+}
+
+.section_empresas{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+    justify-content: space-between;
+}
+
+.section button {
+    display: none;
+}
+
+.section_criar_conta button {
+    display: block;
+}
+
+
+
+
+@media screen and (max-width: 768px) { 
+
+    .section {
+        padding: 124px 16px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section button {
+        display: block;
+    }
+
+    .section_criar_conta button {
+        display: none;
+    }
+    
+    .section_empresas {
+        width: 100%;
+        gap: 35px;
+        justify-content: center;
+    }
+    
+    .section_empresas li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 35%;
+    }
+
+    .section_criar_conta { width: 100%;}
+}

@@ -1,0 +1,26 @@
+.input_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    gap: 8px;
+}
+
+.input_container label {
+    font-weight: 700;
+}
+
+.input_container input {
+    padding: 10px 12px;
+    border: 2px solid #000000; 
+    box-shadow: inset 6px 6px 0px #EEFBFB;
+    width: 100%;
+}
+
+.input_container input::placeholder {
+    color: var(--color-gray-secondary);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}

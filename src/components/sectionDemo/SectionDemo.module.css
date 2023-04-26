@@ -1,0 +1,137 @@
+
+.section {
+    position: relative;
+    padding: 66px 108px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-white-primary);
+    z-index: 2;
+}
+
+.section::after{
+    content: '';
+    position: absolute;
+    width: 96%;
+    height: 60%;
+    background: var(--color-white-secondary);
+    top: 20%;
+    left: 0;
+    z-index: -1;
+}
+
+.section h3 {
+    line-height: 35.2px;
+    margin-bottom: 40px;
+}
+
+.modal {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    right: 40px;
+    bottom: 40px;
+    border: 1px solid var(--color-white-secondary);
+    background-color: var(--color-white-primary);
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    z-index: 999;
+    width: 95%;
+    height: 85%;
+}
+
+.modal iframe {
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+}
+
+.modal_overlay {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--color-white-secondary);
+    width: 100vw;
+    height: 100vh;
+}
+
+.container_text button {
+    display: flex;
+}
+
+@media screen and (max-width: 360px) {
+
+}
+
+@media screen and (max-width: 1200px) {
+
+    .section {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 66px 16px;
+    }
+
+    .section button {
+        display: block;
+        margin: 0 auto 30px auto;
+    }
+
+    .section::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 80%;
+        background: var(--color-white-secondary);
+        top: 0%;
+        left: 0;
+        z-index: -1;
+    }
+
+    .modal {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    border: 1px solid var(--color-white-secondary);
+    background-color: var(--color-white-primary);
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    z-index: 999;
+    width: 95%;
+    height: 100vh;
+}
+
+.modal iframe {
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+}
+
+.modal_overlay {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--color-white-secondary);
+    width: 100vw;
+    height: 100vh;
+}
+
+}
